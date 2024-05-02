@@ -15,4 +15,4 @@ def test2(a:int, b, c=3):
     print(a, b, c)
 
 test2(1, 3, 4)
-str, list, dict, tuple float
+# str, list, dict, tuple float

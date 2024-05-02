@@ -1,9 +1,14 @@
+
+"""
+使用insert 语句把所在部门平均工资超过公司平均工资的员工信息导入到t_emp_new 表里面,
+并且让这些员工隶属于sales部门
+"""
 import mysql.connector.pooling
 config={
     "host":"localhost",
     "port":3306,
     "user":"root",
-    "password":"abc123456",
+    "password":"123456",
     "database":"demo"
 }
 try:

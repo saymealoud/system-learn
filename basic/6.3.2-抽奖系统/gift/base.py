@@ -277,9 +277,14 @@ if __name__ == '__main__':
     print(user_path)
     base = Base(user_json=user_path, gift_json=gift_path)
 
-    base.delete_gift(first_level='level1',
-                    second_level='level2',
-                    gift_name='iphone10')
+    # base.write_user(username="zjc",role='admin')
+    # print(base.read_gifts())
+
+
+
+    # base.delete_gift(first_level='level1',
+    #                 second_level='level2',
+    #                 gift_name='iphone10')
     # result = base.delete_user(username='dewei')
     # print(result)
 

@@ -1,10 +1,14 @@
+"""
+编写insert语句向部门表插入两条记录,每条记录都在部门原有最大主键值的基础上+10
+"""
+
 import mysql.connector.pooling
 
 config={
     "host":"localhost",
     "port":3306,
     "user":"root",
-    "password":"abc123456",
+    "password":"123456",
     "database":"demo"
 }
 try:

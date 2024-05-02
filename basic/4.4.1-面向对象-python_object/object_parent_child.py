@@ -14,6 +14,10 @@ class Parent(object):
         else:
             return f'{self.name} is a girl'
 
+    def play_pingpong(self):
+        return f'{self.name} are play_pingpong'
+
+
 class ChildOne(Parent):
     def play_football(self):
         return f'{self.name} are playing football'
