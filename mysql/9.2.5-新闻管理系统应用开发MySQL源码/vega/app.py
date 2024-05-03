@@ -14,7 +14,7 @@ __news_service=NewsService()
 __role_service=RoleService()
 
 while True:
-    os.system("cls")
+    os.system("clear")
     print(Fore.LIGHTBLUE_EX,"\n\t==================")
     print(Fore.LIGHTBLUE_EX,"\n\t欢迎使用新闻管理系统")
     print(Fore.LIGHTBLUE_EX, "\n\t==================")
@@ -31,7 +31,7 @@ while True:
             #查询角色
             role=__user_service.search_user_role(username)
             while True:
-                os.system("cls")
+                os.system("clear")
                 if role=="新闻编辑":
                     print('test')
                 elif role=="管理员":
@@ -43,7 +43,7 @@ while True:
                     opt = input("\n\t输入操作编号:")
                     if opt=="1":
                         while True:
-                            os.system("cls")
+                            os.system("clear")
                             print(Fore.LIGHTGREEN_EX, "\n\t1.审批新闻")
                             print(Fore.LIGHTGREEN_EX, "\n\t2.删除新闻")
                             print(Fore.LIGHTRED_EX, "\n\tback.返回上一层")
@@ -52,7 +52,7 @@ while True:
                             if opt=="1":
                                 page=1
                                 while True:
-                                    os.system("cls")
+                                    os.system("clear")
                                     count_page=__news_service.search_unreview_count_page()
                                     result=__news_service.search_unreview_list(page)
                                     for index in range(len(result)):
@@ -78,7 +78,7 @@ while True:
                             elif opt=="2":
                                 page=1
                                 while True:
-                                    os.system("cls")
+                                    os.system("clear")
                                     count_page=__news_service.search_count_page()
                                     result=__news_service.search_list(page)
                                     for index in range(len(result)):
@@ -105,7 +105,7 @@ while True:
                                 break
                     elif opt=="2":
                         while True:
-                            os.system("cls")
+                            os.system("clear")
                             print(Fore.LIGHTGREEN_EX, "\n\t1.添加用户")
                             print(Fore.LIGHTGREEN_EX, "\n\t2.修改用户")
                             print(Fore.LIGHTGREEN_EX, "\n\t3.删除用户")
@@ -115,7 +115,7 @@ while True:
                             if opt=="back":
                                 break
                             elif opt=="1":
-                                os.system("cls")
+                                os.system("clear")
                                 username=input("\n\t用户名:")
                                 password = getpass("\n\t密码:")
                                 repassword=getpass("\n\t重复密码:")
@@ -137,7 +137,7 @@ while True:
                             elif opt=="2":
                                 page = 1
                                 while True:
-                                    os.system("cls")
+                                    os.system("clear")
                                     count_page = __user_service.search_count_page()
                                     result = __user_service.search_list(page)
                                     for index in range(len(result)):
@@ -159,7 +159,7 @@ while True:
                                     elif opt == "next" and page < count_page:
                                         page += 1
                                     elif int(opt) >= 1 and int(opt) <= 10:
-                                        os.system("cls")
+                                        os.system("clear")
                                         user_id=result[int(opt)-1][0]
                                         username = input("\n\t新用户名:")
                                         password = getpass("\n\t新密码:")
@@ -185,7 +185,7 @@ while True:
                             elif opt=="3":
                                 page = 1
                                 while True:
-                                    os.system("cls")
+                                    os.system("clear")
                                     count_page = __user_service.search_count_page()
                                     result = __user_service.search_list(page)
                                     for index in range(len(result)):
@@ -207,7 +207,7 @@ while True:
                                     elif opt == "next" and page < count_page:
                                         page += 1
                                     elif int(opt) >= 1 and int(opt) <= 10:
-                                        os.system("cls")
+                                        os.system("clear")
                                         user_id=result[int(opt)-1][0]
                                         __user_service.delete_by_id(user_id)
                                         print("\n\t删除成功(3秒自动返回)")

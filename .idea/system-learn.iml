@@ -2,6 +2,8 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/mysql/9.2.5-新闻管理系统应用开发MySQL源码/vega" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/redis/10.4.2-Redis与Python的交互/demo_2" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />

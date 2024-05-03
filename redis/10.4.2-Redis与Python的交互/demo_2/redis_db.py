@@ -1,6 +1,6 @@
 import redis
 try:
-    pool = redis.ConnectionPool(
+    pool = redis.connection_pool.ConnectionPool(
         host="localhost",
         port=6379,
         password="123456",
