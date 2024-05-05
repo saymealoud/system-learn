@@ -94,3 +94,5 @@ def global_func():
     return render_template('global_func.html')
 
 
+if __name__ == '__main__':
+   app.run()
