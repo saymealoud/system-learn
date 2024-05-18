@@ -1,4 +1,7 @@
 from pymongo import MongoClient
 
-client=MongoClient(host="localhost",port=27017)
-client.admin.authenticate("admin","abc123456")
+# 使用连接字符串直接进行身份验证
+uri = "mongodb://root:123456@localhost:27017/"
+client = MongoClient(uri)
+
+# 导出 client 供其他文件使用

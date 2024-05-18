@@ -1,4 +1,4 @@
-from db.type_dao import TypeDao
+from db.type import TypeDao
 
 class TypeService:
     __type_dao=TypeDao()
